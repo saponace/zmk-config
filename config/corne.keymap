@@ -41,19 +41,19 @@
 
         raise_layer {
             bindings = <
-&kp ESCAPE  &kp EXCL      &kp AT        &kp HASH      &kp DLLR       &kp PRCNT       &kp CARET  &kp AMPS   &kp ASTRK      &kp LPAR          &kp RPAR           &kp BSPC
-&trans      &kp PLUS      &kp MINUS     &kp ASTERISK  &kp KP_DIVIDE  &kp KP_EQUAL    &trans     &kp GRAVE  &kp BACKSLASH  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp DOUBLE_QUOTES
-&kp LSHFT   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3   &bt BT_CLR      &trans     &kp TILDE  &kp PIPE       &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp TILDE
-                                        &kp LGUI      &trans         &kp LCTRL       &kp SPACE  &trans     &kp ENTER
+&kp ESCAPE  &kp EXCL  &kp AT     &kp HASH      &kp DLLR       &kp PRCNT       &kp CARET  &kp AMPS   &kp ASTRK      &kp LPAR          &kp RPAR           &kp BSPC
+&trans      &kp PLUS  &kp MINUS  &kp ASTERISK  &kp KP_DIVIDE  &kp KP_EQUAL    &trans     &kp GRAVE  &kp BACKSLASH  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp DOUBLE_QUOTES
+&kp LSHFT   &trans    &trans     &trans        &trans         &trans          &trans     &kp TILDE  &kp PIPE       &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp TILDE
+                                 &kp LGUI      &trans         &kp LCTRL       &kp SPACE  &trans     &kp ENTER
             >;
         };
 
         layer_3 {
             bindings = <
-&kp ESCAPE  &trans        &trans        &trans        &trans        &trans          &trans        &trans        &trans        &trans        &trans        &trans
-&trans      &trans        &trans        &trans        &trans        &trans          &trans        &trans        &trans        &trans        &trans        &trans
-&kp LSHFT   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR      &trans        &trans        &trans        &trans        &trans        &trans
-                                        &trans        &trans        &trans          &trans        &trans        &trans
+&kp ESCAPE  &trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans
+&kp LSHFT   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR    &trans  &trans  &trans  &trans  &trans  &trans
+                                        &trans        &trans        &trans        &trans  &trans  &trans
             >;
         };
     };
