@@ -21,7 +21,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        layer_0 {
             bindings = <
 &kp ESCAPE  &kp Q  &kp W  &kp E      &kp R  &kp T        &kp Y      &kp U  &kp I      &kp O    &kp P     &kp BSPC
 &kp TAB     &kp A  &kp S  &kp D      &kp F  &kp G        &kp H      &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
@@ -30,7 +30,7 @@
             >;
         };
 
-        lower_layer {
+        layer_1 {
             bindings = <
 &kp ESCAPE  &trans  &kp NUMBER_1  &kp NUMBER_2  &kp N3  &trans       &trans     &trans    &trans    &trans        &trans     &kp BSPC
 &trans      &trans  &kp N4        &kp N5        &kp N6  &trans       &trans     &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans
@@ -39,7 +39,7 @@
             >;
         };
 
-        raise_layer {
+        layer_2 {
             bindings = <
 &kp ESCAPE  &kp EXCL  &kp AT     &kp HASH      &kp DLLR       &kp PRCNT       &kp CARET     &kp AMPS        &kp ASTRK      &kp LPAR          &kp RPAR           &kp BSPC
 &trans      &kp PLUS  &kp MINUS  &kp ASTERISK  &kp KP_DIVIDE  &kp KP_EQUAL    &kp QUESTION  &kp GRAVE       &kp BACKSLASH  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp DOUBLE_QUOTES
