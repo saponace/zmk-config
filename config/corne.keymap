@@ -35,9 +35,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp ESCAPE  &trans  &kp KP_NUMBER_1  &kp KP_N2  &kp KP_N3  &trans       &trans     &trans    &trans     &trans     &trans  &kp BSPC
-&trans      &trans  &kp KP_N4        &kp KP_N5  &kp KP_N6  &trans       &trans     &kp LEFT  &kp DOWN   &kp RIGHT  &trans  &trans
-&kp LSHFT   &trans  &kp KP_N7        &kp KP_N8  &kp KP_N9  &kp KP_N0    &trans     &trans    &trans     &trans     &trans  &trans
+&kp ESCAPE  &trans  &kp KP_NUMBER_1  &kp KP_N2  &kp KP_N3  &trans       &trans     &trans    &trans     &trans        &trans     &kp BSPC
+&trans      &trans  &kp KP_N4        &kp KP_N5  &kp KP_N6  &trans       &trans     &kp LEFT  &kp DOWN   &kp UP_ARROW  &kp RIGHT  &trans
+&kp LSHFT   &trans  &kp KP_N7        &kp KP_N8  &kp KP_N9  &kp KP_N0    &trans     &trans    &trans     &trans        &trans     &trans
                                      &kp LGUI   &trans     &kp LCTRL    &kp SPACE  &trans    &kp ENTER
             >;
         };
