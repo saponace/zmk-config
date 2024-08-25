@@ -26,6 +26,11 @@
             bindings = <&soft_off>;
             key-positions = <41 40 39>;
         };
+
+        alt {
+            bindings = <&kp LEFT_ALT>;
+            key-positions = <37 38>;
+        };
     };
 
     keymap {
