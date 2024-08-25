@@ -16,6 +16,11 @@
             bindings = <&mo 3>;
             key-positions = <37 40>;
         };
+
+        soft-off {
+            bindings = <&soft_off>;
+            key-positions = <38 39>;
+        };
     };
 
     keymap {
