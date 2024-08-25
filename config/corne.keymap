@@ -17,9 +17,14 @@
             key-positions = <37 40>;
         };
 
-        soft-off {
+        soft_off_right {
             bindings = <&soft_off>;
-            key-positions = <38 39>;
+            key-positions = <37 36 38>;
+        };
+
+        soft_off_left {
+            bindings = <&soft_off>;
+            key-positions = <41 40 39>;
         };
     };
 
