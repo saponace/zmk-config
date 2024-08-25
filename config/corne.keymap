@@ -56,10 +56,10 @@
 
         layer_2 {
             bindings = <
-&kp ESCAPE  &trans  &kp AT      &kp HASH     &kp PLUS      &kp MINUS    &kp CARET        &kp AMPS        &trans         &kp LPAR          &kp RPAR           &kp DELETE
-&trans      &trans  &kp DOLLAR  &kp PERCENT  &kp ASTERISK  &kp SLASH    &kp QUESTION     &kp TILDE       &kp BACKSLASH  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp DOUBLE_QUOTES
-&kp LSHFT   &trans  &trans      &trans       &trans        &kp EQUAL    &kp EXCLAMATION  &kp UNDERSCORE  &kp PIPE       &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp GRAVE
-                                &kp LCTRL    &trans        &kp SPACE    &kp ENTER        &trans          &kp LGUI
+&kp ESCAPE  &trans  &kp AT      &kp HASH     &kp PLUS      &kp MINUS    &kp CARET      &kp DOUBLE_QUOTES  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE         &kp DELETE
+&trans      &trans  &kp DOLLAR  &kp PERCENT  &kp ASTERISK  &kp SLASH    &kp QUESTION   &kp SINGLE_QUOTE   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp EXCLAMATION  &kp UNDERSCORE
+&kp LSHFT   &trans  &trans      &trans       &trans        &kp EQUAL    &kp AMPERSAND  &kp GRAVE          &kp PIPE              &kp LEFT_BRACE         &kp BACKSLASH    &kp TILDE
+                                &kp LCTRL    &trans        &kp SPACE    &kp ENTER      &trans             &kp LGUI
             >;
         };
 
