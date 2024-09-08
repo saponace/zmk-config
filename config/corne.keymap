@@ -46,19 +46,19 @@
 
         NUM {
             bindings = <
-&kp ESCAPE  &trans  &kp NUMBER_1  &kp NUMBER_2  &kp N3  &trans       &trans     &trans    &trans    &trans        &trans     &kp BSPC
-&trans      &trans  &kp N4        &kp N5        &kp N6  &trans       &trans     &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &kp INSERT
-&kp LSHFT   &trans  &kp N7        &kp N8        &kp N9  &kp N0       &trans     &trans    &trans    &trans        &trans     &trans
-                                  &kp LCTRL     &trans  &kp SPACE    &kp ENTER  &trans    &kp LGUI
+&trans  &trans  &kp NUMBER_1  &kp NUMBER_2  &kp N3  &trans    &trans  &trans    &trans    &trans        &trans     &trans
+&trans  &trans  &kp N4        &kp N5        &kp N6  &trans    &trans  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &kp INSERT
+&trans  &trans  &kp N7        &kp N8        &kp N9  &kp N0    &trans  &trans    &trans    &trans        &trans     &trans
+                              &trans        &trans  &trans    &trans  &trans    &trans
             >;
         };
 
         SYMBOLS {
             bindings = <
-&kp ESCAPE  &trans  &kp AT      &kp HASH     &kp PLUS      &kp MINUS    &kp CARET      &kp DOUBLE_QUOTES  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE         &kp DELETE
-&trans      &trans  &kp DOLLAR  &kp PERCENT  &kp ASTERISK  &kp SLASH    &kp QUESTION   &kp SINGLE_QUOTE   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp EXCLAMATION  &kp UNDERSCORE
-&kp LSHFT   &trans  &trans      &trans       &trans        &kp EQUAL    &kp AMPERSAND  &kp GRAVE          &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp BACKSLASH    &kp TILDE
-                                &kp LCTRL    &trans        &kp SPACE    &kp ENTER      &trans             &kp LGUI
+&trans  &trans  &kp AT      &kp HASH     &kp PLUS      &kp MINUS    &kp CARET      &kp DOUBLE_QUOTES  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE         &kp DELETE
+&trans  &trans  &kp DOLLAR  &kp PERCENT  &kp ASTERISK  &kp SLASH    &kp QUESTION   &kp SINGLE_QUOTE   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp EXCLAMATION  &kp UNDERSCORE
+&trans  &trans  &trans      &trans       &trans        &kp EQUAL    &kp AMPERSAND  &kp GRAVE          &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp BACKSLASH    &kp TILDE
+                            &trans       &trans        &trans       &trans         &trans             &trans
             >;
         };
 
