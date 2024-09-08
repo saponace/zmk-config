@@ -55,10 +55,10 @@
 
         SYMBOLS {
             bindings = <
-&trans  &none  &kp AT      &kp HASH     &kp PLUS      &kp MINUS    &kp CARET      &kp DOUBLE_QUOTES  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE         &kp DELETE
-&trans  &none  &kp DOLLAR  &kp PERCENT  &kp ASTERISK  &kp SLASH    &kp QUESTION   &kp SINGLE_QUOTE   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp EXCLAMATION  &kp UNDERSCORE
-&trans  &none  &none       &none        &none         &kp EQUAL    &kp AMPERSAND  &kp GRAVE          &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp BACKSLASH    &kp TILDE
-                           &trans       &trans        &trans       &trans         &trans             &trans
+&trans  &kp AMPERSAND  &kp AT      &kp HASH      &kp PLUS        &kp MINUS    &kp LESS_THAN      &kp GREATER_THAN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE         &kp DELETE
+&trans  &kp TILDE      &kp DOLLAR  &kp PERCENT   &kp ASTERISK    &kp SLASH    &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp EXCLAMATION  &trans
+&trans  &none          &none       &kp QUESTION  &kp UNDERSCORE  &kp EQUAL    &kp CARET          &kp GRAVE         &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp BACKSLASH    &trans
+                                   &trans        &trans          &trans       &trans             &trans            &trans
             >;
         };
 
