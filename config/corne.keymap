@@ -18,7 +18,7 @@
         };
 
         alt {
-            bindings = <&mt LEFT_ALT LEFT_ALT>;
+            bindings = <&sk LEFT_ALT>;
             key-positions = <37 38>;
         };
     };
