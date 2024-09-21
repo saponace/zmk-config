@@ -7,7 +7,7 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: keymaps/highest-layer-active-fixes
+      revision: feat/pointers-move-scroll
       import: app/west.yml
   self:
     path: config
