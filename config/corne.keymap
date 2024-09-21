@@ -48,9 +48,9 @@
         NUM {
             bindings = <
 &trans  &none  &kp NUMBER_1  &kp NUMBER_2  &kp N3  &none     &none      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans
-&trans  &none  &kp N4        &kp N5        &kp N6  &none     &none      &kp LEFT      &kp DOWN        &kp UP_ARROW  &kp RIGHT        &trans
-&trans  &none  &kp N7        &kp N8        &kp N9  &kp N0    &mkp LCLK  &mkp RCLK     &mkp MB3        &none         &none            &trans
-                             &trans        &trans  &trans    &trans     &trans        &trans
+&trans  &none  &kp N4        &kp N5        &kp N6  &none     &none      &kp LEFT        &kp DOWN        &kp UP_ARROW  &kp RIGHT        &trans
+&trans  &none  &kp N7        &kp N8        &kp N9  &kp N0    &none      &none           &none           &none         &none            &trans
+                             &trans        &none   &trans    &mkp LCLK  &mkp RCLK       &mkp MCLK
             >;
         };
 
@@ -59,7 +59,7 @@
 &trans  &kp AMPERSAND  &kp AT      &kp HASH      &kp PLUS        &kp MINUS    &kp LESS_THAN      &kp GREATER_THAN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE         &kp DELETE
 &trans  &kp TILDE      &kp DOLLAR  &kp PERCENT   &kp ASTERISK    &kp SLASH    &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp EXCLAMATION  &trans
 &trans  &none          &none       &kp QUESTION  &kp UNDERSCORE  &kp EQUAL    &kp CARET          &kp GRAVE         &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp BACKSLASH    &trans
-                                   &trans        &trans          &trans       &trans             &trans            &trans
+                                   &trans        &none           &trans       &kp ENTER          &none             &kp LGUI
             >;
         };
 
