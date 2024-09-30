@@ -59,10 +59,10 @@
         SYMBOLS {
             display-name = "Symbols";
             bindings = <
-&trans  &kp AMPERSAND  &kp AT      &kp HASH      &kp PLUS        &kp MINUS    &kp LESS_THAN      &kp GREATER_THAN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE         &kp DELETE
-&trans  &kp TILDE      &kp DOLLAR  &kp PERCENT   &kp ASTERISK    &kp SLASH    &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp EXCLAMATION  &trans
-&trans  &none          &none       &kp QUESTION  &kp UNDERSCORE  &kp EQUAL    &kp CARET          &kp GRAVE         &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp BACKSLASH    &trans
-                                   &trans        &trans          &trans       &trans             &trans            &trans
+&trans  &kp QUESTION  &kp UNDERSCORE  &kp AMPERSAND  &kp PLUS      &kp MINUS    &kp LESS_THAN  &kp GREATER_THAN   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE         &kp DELETE
+&trans  &kp AT        &kp HASH        &kp DOLLAR     &kp ASTERISK  &kp SLASH    &kp GRAVE      &kp SINGLE_QUOTE   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp EXCLAMATION  &trans
+&trans  &none         &none           &kp TILDE      &kp PERCENT   &kp EQUAL    &kp CARET      &kp DOUBLE_QUOTES  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp BACKSLASH    &trans
+                                      &trans         &trans        &trans       &trans         &trans             &trans
             >;
         };
 
