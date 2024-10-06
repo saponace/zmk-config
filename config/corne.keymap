@@ -8,27 +8,33 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
+#define ALPHA    0
+#define OSX      1
+#define NUM      2
+#define SYMBOLS  3
+#define SYSTEM   4
+
 / {
     behaviors {
-        layer_2: layer_2 {
+        layer_num: layer_num {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <400>;
-            bindings = <&sl 2>, <&tog 2>;
+            bindings = <&sl NUM>, <&tog NUM>;
         };
 
-        layer_3: layer_3 {
+        layer_symbols: layer_symbols {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <400>;
-            bindings = <&sl 3>, <&tog 3>;
+            bindings = <&sl SYMBOLS>, <&tog SYMBOLS>;
         };
 
-        layer_4: layer_4 {
+        layer_system: layer_system {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <400>;
-            bindings = <&sl 4>, <&tog 4>;
+            bindings = <&sl SYSTEM>, <&tog SYSTEM>;
         };
     };
 };
@@ -38,7 +44,7 @@
         compatible = "zmk,combos";
 
         layer_3 {
-            bindings = <&layer_4>;
+            bindings = <&layer_system>;
             key-positions = <37 40>;
         };
 
@@ -57,7 +63,7 @@
 &kp ESCAPE  &kp Q  &kp W  &kp E      &kp R     &kp T        &kp Y      &kp U     &kp I      &kp O    &kp P     &kp BSPC
 &kp TAB     &kp A  &kp S  &kp D      &kp F     &kp G        &kp H      &kp J     &kp K      &kp L    &kp SEMI  &kp INSERT
 &sk LSHFT   &kp Z  &kp X  &kp C      &kp V     &kp B        &kp N      &kp M     &kp COMMA  &kp DOT  &kp FSLH  &sk LEFT_SHIFT
-                          &kp LCTRL  &layer_2  &kp SPACE    &kp ENTER  &layer_3  &kp LGUI
+                          &kp LCTRL  &layer_num  &kp SPACE    &kp ENTER  &layer_symbols  &kp LGUI
             >;
         };
 
@@ -95,7 +101,7 @@
             display-name = "System";
             bindings = <
 &trans  &none         &kp K_MUTE    &kp C_VOLUME_DOWN     &kp C_VOLUME_UP       &kp CAPSLOCK    &kp F1  &kp F2  &kp F3  &kp F4   &kp F5   &kp F6
-&trans  &none         &none         &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &tog 1          &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
+&trans  &none         &none         &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &tog OSX          &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
 &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2          &bt BT_SEL 3          &bt BT_CLR      &none   &none   &none   &none    &none    &trans
                                     &trans                &trans                &trans          &trans  &trans  &trans
             >;
