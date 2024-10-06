@@ -13,21 +13,21 @@
         layer_2: layer_2 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <400>;
             bindings = <&sl 2>, <&tog 2>;
         };
 
         layer_3: layer_3 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <400>;
             bindings = <&sl 3>, <&tog 3>;
         };
 
         layer_4: layer_4 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <400>;
             bindings = <&sl 4>, <&tog 4>;
         };
     };
