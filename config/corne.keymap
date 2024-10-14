@@ -37,9 +37,7 @@
             bindings = <&sl SYSTEM>, <&to SYSTEM>;
         };
     };
-};
 
-/ {
     combos {
         compatible = "zmk,combos";
 
