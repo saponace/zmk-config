@@ -20,21 +20,21 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <400>;
-            bindings = <&sl NUM>, <&tog NUM>;
+            bindings = <&sl NUM>, <&to NUM>;
         };
 
         symbols: layer_symbols {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <400>;
-            bindings = <&sl SYMBOLS>, <&tog SYMBOLS>;
+            bindings = <&sl SYMBOLS>, <&to SYMBOLS>;
         };
 
         system: layer_system {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <400>;
-            bindings = <&sl SYSTEM>, <&tog SYSTEM>;
+            bindings = <&sl SYSTEM>, <&to SYSTEM>;
         };
     };
 };
@@ -101,7 +101,7 @@
             display-name = "System";
             bindings = <
 &trans  &none         &kp K_MUTE    &kp C_VOLUME_DOWN     &kp C_VOLUME_UP       &kp CAPSLOCK    &kp F1  &kp F2  &kp F3  &kp F4   &kp F5   &kp F6
-&trans  &none         &none         &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &tog OSX          &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
+&trans  &none         &none         &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &tog OSX        &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
 &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2          &bt BT_SEL 3          &bt BT_CLR      &none   &none   &none   &none    &none    &trans
                                     &trans                &trans                &trans          &trans  &trans  &trans
             >;
