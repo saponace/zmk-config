@@ -43,7 +43,7 @@
     combos {
         compatible = "zmk,combos";
 
-        layer_3 {
+        lsystem {
             bindings = <&system>;
             key-positions = <37 40>;
         };
