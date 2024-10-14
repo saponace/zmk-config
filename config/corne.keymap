@@ -64,6 +64,14 @@
 
         lsystem {
             bindings = <&system>;
+            // Have to define a list of layers, otherwise it will conflict with lsystem_on_osx. Active on layer SYSTEM to be able to exit layer SYSTEM by tapping the combo once
+            layers= <ALPHA SYSTEM>;
+            key-positions = <37 40>;
+        };
+
+        lsystem_on_osx {
+            bindings = <&system_on_osx>;
+            layers = <OSX>;
             key-positions = <37 40>;
         };
 
