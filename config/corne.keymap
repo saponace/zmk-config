@@ -62,13 +62,17 @@
     combos {
         compatible = "zmk,combos";
 
+        /*
+        * Move to layer SYSTEM in non-OSX mode
+        * I do not understand why this returns to OSX when enabled from SYSTEM, as it should return to ALPHA, but this behavior works for my usecase
+        */
         lsystem {
             bindings = <&system>;
-            // Have to define a list of layers, otherwise it will conflict with lsystem_on_osx. Active on layer SYSTEM to be able to exit layer SYSTEM by tapping the combo once
             layers= <ALPHA SYSTEM>;
             key-positions = <37 40>;
         };
 
+        // Move to layer SYSTEM in OSX mode
         lsystem_on_osx {
             bindings = <&system_on_osx>;
             layers = <OSX>;
@@ -83,18 +87,18 @@
 
     macro {
         /*
-        This macro:
-        - disables all layers except `0` (default) - see `&to` documentation
-        - and activates the desired `base layer` (param 1)
-        - and subsequently toggles the desired `upper layer` (param 2)
+        * This macro:
+        * - disables all layers except `0` (default) - see `&to` documentation
+        * - and activates the desired `base layer` (param 1)
+        * - and subsequently toggles the desired `upper layer` (param 2)
 
-        Params:
-        1. base layer to activate
-        2. upper layer to activate
+        * Params:
+        * 1. base layer to activate
+        * 2. upper layer to activate
 
-        Example:
-        `&btog OSX NUM`
-        `&btog ALPHA NUM`
+        * Example:
+        * `&btog OSX NUM`
+        * `&btog ALPHA NUM`
         */
         btog: btog {
           wait-ms = <0>;
