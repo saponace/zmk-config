@@ -68,7 +68,7 @@
         */
         lsystem {
             bindings = <&system>;
-            layers= <ALPHA SYSTEM>;
+            layers= <ALPHA NUM SYMBOLS SYSTEM>;
             key-positions = <37 40>;
         };
 
