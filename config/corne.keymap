@@ -22,14 +22,14 @@
             bindings = <&sl NUM>, <&btog NUM>;
         };
 
-        symbols: layer_symbols {
+        sym: layer_symbols {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <400>;
             bindings = <&sl SYMBOLS>, <&btog SYMBOLS>;
         };
 
-        system: layer_system {
+        sys: layer_system {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <400>;
@@ -44,7 +44,7 @@
         * Move to layer SYSTEM
         */
         lsystem {
-            bindings = <&system>;
+            bindings = <&sys>;
             key-positions = <37 40>;
         };
 
@@ -80,10 +80,10 @@
         ALPHA {
             display-name = " ";
             bindings = <
-&kp ESCAPE  &kp Q  &kp W  &kp E      &kp R  &kp T        &kp Y      &kp U     &kp I      &kp O    &kp P     &kp BSPC
-&kp TAB     &kp A  &kp S  &kp D      &kp F  &kp G        &kp H      &kp J     &kp K      &kp L    &kp SEMI  &kp INSERT
-&sk LSHFT   &kp Z  &kp X  &kp C      &kp V  &kp B        &kp N      &kp M     &kp COMMA  &kp DOT  &kp FSLH  &sk LEFT_SHIFT
-                          &kp LCTRL  &num   &kp SPACE    &kp ENTER  &symbols  &kp LGUI
+&kp ESCAPE  &kp Q  &kp W  &kp E      &kp R  &kp T        &kp Y      &kp U  &kp I      &kp O    &kp P     &kp BSPC
+&kp TAB     &kp A  &kp S  &kp D      &kp F  &kp G        &kp H      &kp J  &kp K      &kp L    &kp SEMI  &kp INSERT
+&sk LSHFT   &kp Z  &kp X  &kp C      &kp V  &kp B        &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH  &sk LEFT_SHIFT
+                          &kp LCTRL  &num   &kp SPACE    &kp ENTER  &sym   &kp LGUI
             >;
         };
 
