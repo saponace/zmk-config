@@ -13,8 +13,23 @@
 #define SYMBOLS  2
 #define SYSTEM   3
 
+#define HOME_ROW_MOD_TAP(name, modifier)      \
+name: name##_mod_tap {                     \
+    label = #name;                         \
+    compatible = "zmk,behavior-hold-tap";  \
+    #binding-cells = <1>;                  \
+    flavor = "balanced";                   \
+    tapping-term-ms = <200>;               \
+    quick-tap-ms = <150>;                  \
+    global-quick-tap;                      \
+    bindings = <&kp modifier>, <&kp>;             \
+};
+
 / {
     behaviors {
+        /*
+        * layers
+        */
         num: layer_num {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
@@ -35,6 +50,11 @@
             tapping-term-ms = <400>;
             bindings = <&sl SYSTEM>, <&btog SYSTEM>;
         };
+
+        HOME_ROW_MOD_TAP(hrm_gui, LGUI)
+        HOME_ROW_MOD_TAP(hrm_alt, LALT)
+        HOME_ROW_MOD_TAP(hrm_sht, LSHIFT)
+        HOME_ROW_MOD_TAP(hrm_ctl, LCTRL)
     };
 
     combos {
@@ -80,10 +100,10 @@
         ALPHA {
             display-name = " ";
             bindings = <
-&kp ESCAPE  &kp Q  &kp W  &kp E      &kp R  &kp T        &kp Y      &kp U  &kp I      &kp O    &kp P     &kp BSPC
-&kp TAB     &kp A  &kp S  &kp D      &kp F  &kp G        &kp H      &kp J  &kp K      &kp L    &kp SEMI  &kp INSERT
-&sk LSHFT   &kp Z  &kp X  &kp C      &kp V  &kp B        &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH  &sk LEFT_SHIFT
-                          &kp LCTRL  &num   &kp SPACE    &kp ENTER  &sym   &kp LGUI
+&kp ESCAPE  &kp Q       &kp W       &kp E       &kp R       &kp T        &kp Y      &kp U       &kp I       &kp O       &kp P          &kp BSPC
+&kp TAB     &hrm_gui A  &hrm_alt S  &hrm_sht D  &hrm_ctl F  &kp G        &kp H      &hrm_ctl J  &hrm_sht K  &hrm_alt L  &hrm_gui SEMI  &kp INSERT
+&sk LSHFT   &kp Z       &kp X       &kp C       &kp V       &kp B        &kp N      &kp M       &kp COMMA   &kp DOT     &kp FSLH       &sk LEFT_SHIFT
+                                    &kp LCTRL   &num        &kp SPACE    &kp ENTER  &sym        &kp LGUI
             >;
         };
 
