@@ -48,6 +48,13 @@
             quick-tap-ms = <150>;
             bindings = <&kp>, <&kp>;
         };
+
+        bspc_del: backspace_delete {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp BACKSPACE>, <&kp DELETE>;
+            mods = <(MOD_LSFT)>;
+        };
     };
 
     combos {
@@ -97,7 +104,7 @@
         ALPHA {
             display-name = " ";
             bindings = <
-&kp ESCAPE  &kp Q       &kp W       &kp E        &kp R        &kp T        &kp Y      &kp U        &kp I        &kp O       &kp P          &kp BSPC
+&kp ESCAPE  &kp Q       &kp W       &kp E        &kp R        &kp T        &kp Y      &kp U        &kp I        &kp O       &kp P          &bspc_del
 &kp TAB     &hm LGUI A  &hm LALT S  &hm LSHFT D  &hm LCTRL F  &kp G        &kp H      &hm LCTRL J  &hm LSHFT K  &hm LALT L  &hm LGUI SEMI  &kp INSERT
 &sk LSHFT   &kp Z       &kp X       &kp C        &kp V        &kp B        &kp N      &kp M        &kp COMMA    &kp DOT     &kp FSLH       &sk LEFT_SHIFT
                                     &kp LCTRL    &num         &kp SPACE    &kp ENTER  &sym         &kp LGUI
@@ -117,7 +124,7 @@
         SYMBOLS {
             display-name = "Symbols";
             bindings = <
-&trans  &kp QUESTION  &kp UNDERSCORE  &kp AMPERSAND     &kp PLUS            &kp MINUS    &kp LESS_THAN  &kp GREATER_THAN        &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS   &kp PIPE              &kp DELETE
+&trans  &kp QUESTION  &kp UNDERSCORE  &kp AMPERSAND     &kp PLUS            &kp MINUS    &kp LESS_THAN  &kp GREATER_THAN        &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS   &kp PIPE              &trans
 &trans  &hm LGUI AT   &hm LALT HASH   &hm LSHFT DOLLAR  &hm LCTRL ASTERISK  &kp SLASH    &kp GRAVE      &hm LCTRL SINGLE_QUOTE  &hm LSHFT LEFT_BRACKET  &hm LALT RIGHT_BRACKET  &hm LGUI EXCLAMATION  &trans
 &trans  &none         &none           &kp TILDE         &kp PERCENT         &kp EQUAL    &kp CARET      &kp DOUBLE_QUOTES       &kp LEFT_BRACE          &kp RIGHT_BRACE         &kp BACKSLASH         &trans
                                       &trans            &trans              &trans       &trans         &trans                  &trans
