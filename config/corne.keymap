@@ -68,7 +68,8 @@
         };
     };
 
-    macro {
+    macros {
+
         /*
         * This macro:
         * - disables all layers except `ALPHA` (default) - see `&to` documentation
@@ -77,7 +78,6 @@
         * Params:
         * 1. layer to activate
         */
-
         btog: btog {
             wait-ms = <0>;
             tap-ms = <0>;
@@ -89,9 +89,6 @@
                 <&macro_press>,
                 <&tog MACRO_PLACEHOLDER>;
         };
-    };
-
-    macros {
     };
 
     keymap {
