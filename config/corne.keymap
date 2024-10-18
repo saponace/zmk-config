@@ -49,10 +49,29 @@
             bindings = <&kp>, <&kp>;
         };
 
+        hms: home_row_mod_shift {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <150>;
+            bindings = <&smrt_shft>, <&kp>;
+        };
+
         bspc_del: backspace_delete {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp BACKSPACE>, <&kp DELETE>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        /*
+        * Caps word when pressing two shifts at once
+        */
+        smrt_shft: smart_shift {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp LSHFT>, <&caps_word>;
             mods = <(MOD_LSFT)>;
         };
     };
@@ -105,7 +124,7 @@
             display-name = " ";
             bindings = <
 &kp ESCAPE  &kp Q       &kp W       &kp E        &kp R        &kp T        &kp Y      &kp U        &kp I        &kp O       &kp P          &bspc_del
-&kp TAB     &hm LGUI A  &hm LALT S  &hm LSHFT D  &hm LCTRL F  &kp G        &kp H      &hm LCTRL J  &hm LSHFT K  &hm LALT L  &hm LGUI SEMI  &kp INSERT
+&kp TAB     &hm LGUI A  &hm LALT S  &hms D       &hm LCTRL F  &kp G        &kp H      &hm LCTRL J  &hms K       &hm LALT L  &hm LGUI SEMI  &kp INSERT
 &sk LSHFT   &kp Z       &kp X       &kp C        &kp V        &kp B        &kp N      &kp M        &kp COMMA    &kp DOT     &kp FSLH       &sk LEFT_SHIFT
                                     &kp LCTRL    &num         &kp SPACE    &kp ENTER  &sym         &kp LGUI
             >;
