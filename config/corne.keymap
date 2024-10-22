@@ -53,6 +53,7 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp BACKSPACE>, <&kp DELETE>;
+
             mods = <(MOD_LSFT)>;
         };
     };
@@ -73,10 +74,14 @@
             bindings = <&sk LEFT_ALT>;
             key-positions = <37 38>;
         };
+
+        Caps_word {
+            bindings = <&caps_word>;
+            key-positions = <15 20>;
+        };
     };
 
     macros {
-
         /*
         * This macro:
         * - disables all layers except `ALPHA` (default) - see `&to` documentation
@@ -85,6 +90,7 @@
         * Params:
         * 1. layer to activate
         */
+
         btog: btog {
             wait-ms = <0>;
             tap-ms = <0>;
@@ -117,7 +123,7 @@
 &trans  &none     &kp N1       &kp N2        &kp N3        &none     &none   &none     &none     &none   &none      &trans
 &trans  &kp LGUI  &hm LALT N4  &hm LSHFT N5  &hm LCTRL N6  &none     &none   &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans
 &trans  &none     &kp N7       &kp N8        &kp N9        &kp N0    &none   &none     &none     &none   &none      &trans
-                                             &trans        &trans    &trans  &trans    &trans    &trans
+                               &trans        &trans        &trans    &trans  &trans    &trans
             >;
         };
 
