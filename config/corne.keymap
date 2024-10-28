@@ -9,9 +9,9 @@
 #include <dt-bindings/zmk/keys.h>
 
 #define ALPHA    0
-#define NUM      1
-#define SYMBOLS  2
-#define SYSTEM   3
+#define NAV      1
+#define NUM  2
+#define SYS   3
 
 / {
     behaviors {
@@ -19,25 +19,25 @@
         * layers
         */
 
-        num: layer_num {
+        nav: layer_nav {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <400>;
+            bindings = <&sl NAV>, <&btog NAV>;
+        };
+
+        sym: layer_num {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <400>;
             bindings = <&sl NUM>, <&btog NUM>;
         };
 
-        sym: layer_symbols {
+        sys: layer_sys {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <400>;
-            bindings = <&sl SYMBOLS>, <&btog SYMBOLS>;
-        };
-
-        sys: layer_system {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <400>;
-            bindings = <&sl SYSTEM>, <&btog SYSTEM>;
+            bindings = <&sl SYS>, <&btog SYS>;
         };
 
         hm: home_row_mod {
@@ -62,10 +62,10 @@
         compatible = "zmk,combos";
 
         /*
-        * Move to layer SYSTEM
+        * Move to layer SYS
         */
 
-        lsystem {
+        lsys {
             bindings = <&sys>;
             key-positions = <37 40>;
         };
@@ -113,32 +113,32 @@
 &kp ESCAPE  &kp Q       &kp W       &kp E        &kp R        &kp T        &kp Y      &kp U        &kp I        &kp O       &kp P          &bspc_del
 &kp TAB     &hm LGUI A  &hm LALT S  &hm LSHFT D  &hm LCTRL F  &kp G        &kp H      &hm LCTRL J  &hm LSHFT K  &hm LALT L  &hm LGUI SEMI  &kp INSERT
 &sk LSHFT   &kp Z       &kp X       &kp C        &kp V        &kp B        &kp N      &kp M        &kp COMMA    &kp DOT     &kp FSLH       &sk LEFT_SHIFT
-                                    &kp LCTRL    &num         &kp SPACE    &kp ENTER  &sym         &kp LGUI
+                                    &kp LCTRL    &nav         &kp SPACE    &kp ENTER  &sym         &kp LGUI
+            >;
+        };
+
+        NAV {
+            display-name = "Nav";
+            bindings = <
+&trans  &kp QUESTION  &kp UNDERSCORE  &kp AMPERSAND     &kp PLUS            &kp MINUS    &none   &none      &none      &none     &none      &trans
+&trans  &hm LGUI AT   &hm LALT HASH   &hm LSHFT DOLLAR  &hm LCTRL ASTERISK  &kp SLASH    &none   &kp LEFT   &kp DOWN   &kp UP    &kp RIGHT  &trans
+&trans  &none         &none           &kp TILDE         &kp PERCENT         &kp EQUAL    &none   &kp LCTRL  &kp LSHFT  &kp LALT  &kp LGUI   &trans
+                                      &trans            &trans              &trans       &trans  &trans     &trans
             >;
         };
 
         NUM {
             display-name = "Num";
             bindings = <
-&trans  &none     &kp N1       &kp N2        &kp N3        &none     &none   &none      &none      &none     &none      &trans
-&trans  &kp LGUI  &hm LALT N4  &hm LSHFT N5  &hm LCTRL N6  &none     &none   &kp LEFT   &kp DOWN   &kp UP    &kp RIGHT  &trans
-&trans  &none     &kp N7       &kp N8        &kp N9        &kp N0    &none   &kp LCTRL  &kp LSHFT  &kp LALT  &kp LGUI   &trans
-                               &trans        &trans        &trans    &trans  &trans     &trans
+&trans  &none     &kp N1       &kp N2        &kp N3        &none     &kp LESS_THAN  &kp GREATER_THAN        &kp LEFT_BRACKET            &kp RIGHT_BRACKET           &kp PIPE              &trans
+&trans  &kp LGUI  &hm LALT N4  &hm LSHFT N5  &hm LCTRL N6  &none     &kp GRAVE      &hm LCTRL SINGLE_QUOTE  &hm LSHFT LEFT_PARENTHESIS  &hm LALT RIGHT_PARENTHESIS  &hm LGUI EXCLAMATION  &trans
+&trans  &none     &kp N7       &kp N8        &kp N9        &kp N0    &kp CARET      &kp DOUBLE_QUOTES       &kp LEFT_BRACE              &kp RIGHT_BRACE             &kp BACKSLASH         &trans
+                               &trans        &trans        &trans    &trans         &trans                  &trans
             >;
         };
 
-        SYMBOLS {
-            display-name = "Symbols";
-            bindings = <
-&trans  &kp QUESTION  &kp UNDERSCORE  &kp AMPERSAND     &kp PLUS            &kp MINUS    &kp LESS_THAN  &kp GREATER_THAN        &kp LEFT_BRACKET            &kp RIGHT_BRACKET           &kp PIPE              &trans
-&trans  &hm LGUI AT   &hm LALT HASH   &hm LSHFT DOLLAR  &hm LCTRL ASTERISK  &kp SLASH    &kp GRAVE      &hm LCTRL SINGLE_QUOTE  &hm LSHFT LEFT_PARENTHESIS  &hm LALT RIGHT_PARENTHESIS  &hm LGUI EXCLAMATION  &trans
-&trans  &none         &none           &kp TILDE         &kp PERCENT         &kp EQUAL    &kp CARET      &kp DOUBLE_QUOTES       &kp LEFT_BRACE              &kp RIGHT_BRACE             &kp BACKSLASH         &trans
-                                      &trans            &trans              &trans       &trans         &trans                  &trans
-            >;
-        };
-
-        SYSTEM {
-            display-name = "System";
+        SYS {
+            display-name = "Sys";
             bindings = <
 &trans  &none         &kp K_MUTE    &kp C_VOLUME_DOWN           &kp C_VOLUME_UP             &kp CAPSLOCK    &kp F1  &kp F2  &kp F3  &kp F4   &kp F5   &kp F6
 &trans  &kp LGUI      &kp LALT      &hm LSHFT C_BRIGHTNESS_DEC  &hm LCTRL C_BRIGHTNESS_INC  &none           &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
