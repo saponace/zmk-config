@@ -138,9 +138,9 @@
         NUM {
             display-name = "Num";
             bindings = <
-&trans  &none     &kp N1       &kp N2        &kp N3        &none     &kp LESS_THAN  &kp GREATER_THAN        &kp LEFT_BRACKET            &kp RIGHT_BRACKET           &none     &trans
+&trans  &none     &kp N7       &kp N8        &kp N9        &none     &kp LESS_THAN  &kp GREATER_THAN        &kp LEFT_BRACKET            &kp RIGHT_BRACKET           &none     &trans
 &trans  &kp LGUI  &hm LALT N4  &hm LSHFT N5  &hm LCTRL N6  &none     &kp GRAVE      &hm LCTRL SINGLE_QUOTE  &hm LSHFT LEFT_PARENTHESIS  &hm LALT RIGHT_PARENTHESIS  &kp LGUI  &trans
-&trans  &none     &kp N7       &kp N8        &kp N9        &kp N0    &kp CARET      &kp DOUBLE_QUOTES       &kp LEFT_BRACE              &kp RIGHT_BRACE             &none     &trans
+&trans  &none     &kp N1       &kp N2        &kp N3        &kp N0    &kp CARET      &kp DOUBLE_QUOTES       &kp LEFT_BRACE              &kp RIGHT_BRACE             &none     &trans
                                &trans        &trans        &trans    &trans         &trans                  &trans
             >;
         };
