@@ -27,14 +27,14 @@ layers:
   - INSERT
   - ''
   - Z
-  - X
-  - C
-  - V
+  - {t: X, h: Sys}
+  - {t: C, h: Nav}
+  - {t: V, h: Num}
   - B
   - N
-  - M
-  - ','
-  - .
+  - {t: M, h: Num}
+  - {t: ',', h: Nav}
+  - {t: ., h: Sys}
   - {t: /, s: \}
   - {t: LEFT SHIFT, h: sticky}
   - ''
@@ -71,7 +71,7 @@ layers:
   - '&'
   - '#'
   - $
-  - '~'
+  - {t: '~', type: held}
   - '%'
   - '@'
   - ''
@@ -115,7 +115,7 @@ layers:
   - ''
   - '1'
   - '2'
-  - '3'
+  - {t: '3', type: held}
   - '0'
   - ^
   - '"'
@@ -156,7 +156,7 @@ layers:
   - F12
   - {t: ▽, type: trans}
   - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
+  - {t: BT, h: '1', type: held}
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
   - BT CLR
