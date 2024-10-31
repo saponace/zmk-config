@@ -144,7 +144,7 @@
 &kp UNDER      &kp PLUS           &kp KP_MINUS   &kp ASTERISK     &kp KP_SLASH    &kp KP_EQUAL    &none   &none      &none      &none     &none      &trans
 &kp PIPE       &hm LGUI QUESTION  &hm LALT EXCL  &hm LSHFT COLON  &hm LCTRL SEMI  &kp KP_DOT      &none   &kp LEFT   &kp DOWN   &kp UP    &kp RIGHT  &trans
 &kp AMPERSAND  &kp POUND          &kp DOLLAR     &kp TILDE        &kp PERCENT     &kp AT          &none   &kp LCTRL  &kp LSHFT  &kp LALT  &kp LGUI   &trans
-                                                 &trans           &nav            &trans          &trans  &none      &trans
+                                                 &none            &nav            &trans          &trans  &none      &none
             >;
         };
 
@@ -153,18 +153,18 @@
             bindings = <
 &kp PLUS   &kp MINUS       &kp N7       &kp N8        &kp N9        &none     &kp LESS_THAN  &kp GREATER_THAN        &kp LEFT_BRACKET            &kp RIGHT_BRACKET           &none     &trans
 &kp ASTRK  &hm LGUI SLASH  &hm LALT N4  &hm LSHFT N5  &hm LCTRL N6  &none     &kp GRAVE      &hm LCTRL SINGLE_QUOTE  &hm LSHFT LEFT_PARENTHESIS  &hm LALT RIGHT_PARENTHESIS  &kp LGUI  &trans
-&trans     &none           &kp N1       &kp N2        &kp N3        &kp N0    &kp CARET      &kp DOUBLE_QUOTES       &kp LEFT_BRACE              &kp RIGHT_BRACE             &none     &trans
-                                        &trans        &none         &trans    &trans         &num                    &trans
+&none      &none           &kp N1       &kp N2        &kp N3        &kp N0    &kp CARET      &kp DOUBLE_QUOTES       &kp LEFT_BRACE              &kp RIGHT_BRACE             &none     &trans
+                                        &none         &none         &trans    &trans         &num                    &none
             >;
         };
 
         SYS {
             display-name = "Sys";
             bindings = <
-&trans  &none         &kp K_MUTE    &kp C_VOLUME_DOWN           &kp C_VOLUME_UP             &kp CAPSLOCK    &kp F1  &kp F2  &kp F3  &kp F4   &kp F5   &kp F6
-&trans  &kp LGUI      &kp LALT      &hm LSHFT C_BRIGHTNESS_DEC  &hm LCTRL C_BRIGHTNESS_INC  &none           &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
-&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2                &bt BT_SEL 3                &bt BT_CLR      &none   &none   &none   &none    &none    &trans
-                                    &trans                      &nav                        &trans          &trans  &num    &trans
+&none  &none         &kp K_MUTE    &kp C_VOLUME_DOWN           &kp C_VOLUME_UP             &kp CAPSLOCK    &kp F1  &kp F2  &kp F3  &kp F4   &kp F5   &kp F6
+&none  &kp LGUI      &kp LALT      &hm LSHFT C_BRIGHTNESS_DEC  &hm LCTRL C_BRIGHTNESS_INC  &none           &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
+&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2                &bt BT_SEL 3                &bt BT_CLR      &none   &none   &none   &none    &none    &trans
+                                   &none                       &none                       &trans          &trans  &none   &none
             >;
         };
     };
