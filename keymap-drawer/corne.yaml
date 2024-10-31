@@ -175,8 +175,6 @@ layers:
 combos:
 - p: [37, 40]
   k: '&sys'
-- p: [37, 38]
-  k: {t: LEFT ALT, h: sticky}
 - p: [15, 20]
   k: '&caps_word'
 - p: [28, 31]
