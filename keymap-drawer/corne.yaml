@@ -179,3 +179,9 @@ combos:
   k: {t: LEFT ALT, h: sticky}
 - p: [15, 20]
   k: '&caps_word'
+- p: [28, 31]
+  k: {t: Num, h: toggle}
+- p: [26, 33]
+  k: {t: Sys, h: toggle}
+- p: [27, 32]
+  k: {t: Nav, h: toggle}
