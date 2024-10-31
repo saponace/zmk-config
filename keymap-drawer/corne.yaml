@@ -25,7 +25,7 @@ layers:
   - {t: L, h: LALT}
   - {t: ;, h: LGUI}
   - INSERT
-  - {t: LSHFT, h: sticky}
+  - ''
   - Z
   - X
   - C
@@ -37,12 +37,12 @@ layers:
   - .
   - {t: /, s: \}
   - {t: LEFT SHIFT, h: sticky}
-  - LCTRL
+  - ''
   - '&nav'
   - SPACE
   - ENTER
   - '&num'
-  - LGUI
+  - ''
   Nav:
   - _
   - +
