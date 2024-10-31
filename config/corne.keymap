@@ -120,8 +120,8 @@
             bindings = <
 &kp ESCAPE  &kp Q       &kp W       &kp E        &kp R        &kp T        &kp Y      &kp U        &kp I        &kp O       &kp P          &bspc_del
 &kp TAB     &hm LGUI A  &hm LALT S  &hm LSHFT D  &hm LCTRL F  &kp G        &kp H      &hm LCTRL J  &hm LSHFT K  &hm LALT L  &hm LGUI SEMI  &kp INSERT
-&sk LSHFT   &kp Z       &kp X       &kp C        &kp V        &kp B        &kp N      &kp M        &kp COMMA    &kp DOT     &slsh_bak      &sk LEFT_SHIFT
-                                    &kp LCTRL    &nav         &kp SPACE    &kp ENTER  &num         &kp LGUI
+&none       &kp Z       &kp X       &kp C        &kp V        &kp B        &kp N      &kp M        &kp COMMA    &kp DOT     &slsh_bak      &sk LEFT_SHIFT
+                                    &none        &nav         &kp SPACE    &kp ENTER  &num         &none
             >;
         };
 
