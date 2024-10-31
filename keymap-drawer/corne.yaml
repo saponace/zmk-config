@@ -80,12 +80,12 @@ layers:
   - LALT
   - LGUI
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
   - '&nav'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ''
-  - {t: ▽, type: trans}
+  - ''
   Num:
   - +
   - '-'
@@ -111,7 +111,7 @@ layers:
   - {t: ), h: LALT}
   - LGUI
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
   - ''
   - '1'
   - '2'
@@ -123,14 +123,14 @@ layers:
   - '}'
   - ''
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&num'
-  - {t: ▽, type: trans}
+  - ''
   Sys:
-  - {t: ▽, type: trans}
+  - ''
   - ''
   - MUTE
   - VOLUME DOWN
@@ -142,7 +142,7 @@ layers:
   - F4
   - F5
   - F6
-  - {t: ▽, type: trans}
+  - ''
   - LGUI
   - LALT
   - {t: BRIGHTNESS DEC, h: LSHFT}
@@ -154,7 +154,7 @@ layers:
   - F10
   - F11
   - F12
-  - {t: ▽, type: trans}
+  - ''
   - {t: BT, h: '0'}
   - {t: BT, h: '1', type: held}
   - {t: BT, h: '2'}
@@ -166,12 +166,12 @@ layers:
   - ''
   - ''
   - {t: ▽, type: trans}
+  - ''
+  - ''
   - {t: ▽, type: trans}
-  - '&nav'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&num'
-  - {t: ▽, type: trans}
+  - ''
+  - ''
 combos:
 - p: [37, 40]
   k: '&sys'
