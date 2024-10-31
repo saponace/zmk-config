@@ -84,7 +84,7 @@ layers:
   - '&nav'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&sys'
+  - ''
   - {t: ▽, type: trans}
   Num:
   - +
@@ -124,7 +124,7 @@ layers:
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&sys'
+  - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&num'
