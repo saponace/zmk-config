@@ -181,7 +181,10 @@ combos:
   k: '&caps_word'
 - p: [28, 31]
   k: {t: Num, h: toggle}
+  l: [' ', Num]
 - p: [26, 33]
   k: {t: Sys, h: toggle}
+  l: [Sys, ' ']
 - p: [27, 32]
   k: {t: Nav, h: toggle}
+  l: [' ', Nav]
