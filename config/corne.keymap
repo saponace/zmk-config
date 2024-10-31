@@ -78,11 +78,6 @@
             key-positions = <37 40>;
         };
 
-        alt {
-            bindings = <&sk LEFT_ALT>;
-            key-positions = <37 38>;
-        };
-
         caps_word {
             bindings = <&caps_word>;
             key-positions = <15 20>;
