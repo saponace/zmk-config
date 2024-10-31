@@ -91,16 +91,19 @@
         toggle_num {
             bindings = <&tog 2>;
             key-positions = <28 31>;
+            layers = <0 2>;
         };
 
         toggle_system {
             bindings = <&tog 3>;
             key-positions = <26 33>;
+            layers = <3 0>;
         };
 
         toggle_nav {
             bindings = <&tog 1>;
             key-positions = <27 32>;
+            layers = <0 1>;
         };
     };
 
