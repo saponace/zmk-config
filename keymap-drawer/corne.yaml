@@ -1,0 +1,181 @@
+layout: {qmk_keyboard: corne_rotated, qmk_layout: LAYOUT_split_3x6_3}
+layers:
+  ' ':
+  - ESCAPE
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - {t: BACKSPACE, s: DELETE}
+  - TAB
+  - {t: A, h: LGUI}
+  - {t: S, h: LALT}
+  - {t: D, h: LSHFT}
+  - {t: F, h: LCTRL}
+  - G
+  - H
+  - {t: J, h: LCTRL}
+  - {t: K, h: LSHFT}
+  - {t: L, h: LALT}
+  - {t: ;, h: LGUI}
+  - INSERT
+  - {t: LSHFT, h: sticky}
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - {t: /, s: \}
+  - {t: LEFT SHIFT, h: sticky}
+  - LCTRL
+  - '&nav'
+  - SPACE
+  - ENTER
+  - '&num'
+  - LGUI
+  Nav:
+  - _
+  - +
+  - KP MINUS
+  - '*'
+  - KP SLASH
+  - KP EQUAL
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - '|'
+  - {t: '?', h: LGUI}
+  - {t: '!', h: LALT}
+  - {t: ':', h: LSHFT}
+  - {t: ;, h: LCTRL}
+  - KP DOT
+  - ''
+  - LEFT
+  - DOWN
+  - UP
+  - RIGHT
+  - {t: ▽, type: trans}
+  - '&'
+  - '#'
+  - $
+  - '~'
+  - '%'
+  - '@'
+  - ''
+  - LCTRL
+  - LSHFT
+  - LALT
+  - LGUI
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&nav'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&sys'
+  - {t: ▽, type: trans}
+  Num:
+  - +
+  - '-'
+  - '7'
+  - '8'
+  - '9'
+  - ''
+  - <
+  - '>'
+  - '['
+  - ']'
+  - ''
+  - {t: ▽, type: trans}
+  - '*'
+  - {t: /, h: LGUI}
+  - {t: '4', h: LALT}
+  - {t: '5', h: LSHFT}
+  - {t: '6', h: LCTRL}
+  - ''
+  - '`'
+  - {t: '''', h: LCTRL}
+  - {t: (, h: LSHFT}
+  - {t: ), h: LALT}
+  - LGUI
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  - '1'
+  - '2'
+  - '3'
+  - '0'
+  - ^
+  - '"'
+  - '{'
+  - '}'
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&sys'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&num'
+  - {t: ▽, type: trans}
+  Sys:
+  - {t: ▽, type: trans}
+  - ''
+  - MUTE
+  - VOLUME DOWN
+  - VOLUME UP
+  - CAPSLOCK
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - F6
+  - {t: ▽, type: trans}
+  - LGUI
+  - LALT
+  - {t: BRIGHTNESS DEC, h: LSHFT}
+  - {t: BRIGHTNESS INC, h: LCTRL}
+  - ''
+  - F7
+  - F8
+  - F9
+  - F10
+  - F11
+  - F12
+  - {t: ▽, type: trans}
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
+  - BT CLR
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&nav'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&num'
+  - {t: ▽, type: trans}
+combos:
+- p: [37, 40]
+  k: '&sys'
+- p: [37, 38]
+  k: {t: LEFT ALT, h: sticky}
+- p: [15, 20]
+  k: '&caps_word'
