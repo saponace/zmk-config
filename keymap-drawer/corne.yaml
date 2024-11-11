@@ -28,63 +28,20 @@ layers:
   - ''
   - Z
   - {t: X, h: Sys}
-  - {t: C, h: Nav}
+  - {t: C, h: Sym}
   - {t: V, h: Num}
   - B
   - N
   - {t: M, h: Num}
-  - {t: ',', h: Nav}
+  - {t: ',', h: Sym}
   - {t: ., h: Sys}
   - {t: /, s: \}
   - {t: LEFT SHIFT, h: sticky}
   - ''
-  - '&nav'
+  - '&sym'
   - SPACE
   - ENTER
   - '&num'
-  - ''
-  Nav:
-  - _
-  - +
-  - KP MINUS
-  - '*'
-  - KP SLASH
-  - KP EQUAL
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {t: ▽, type: trans}
-  - '|'
-  - {t: '?', h: LGUI}
-  - {t: '!', h: LALT}
-  - {t: ':', h: LSHFT}
-  - {t: ;, h: LCTRL}
-  - KP DOT
-  - ''
-  - LEFT
-  - DOWN
-  - UP
-  - RIGHT
-  - {t: ▽, type: trans}
-  - '&'
-  - '#'
-  - $
-  - {t: '~', type: held}
-  - '%'
-  - '@'
-  - ''
-  - LCTRL
-  - LSHFT
-  - LALT
-  - LGUI
-  - {t: ▽, type: trans}
-  - ''
-  - '&nav'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - ''
   - ''
   Num:
   - +
@@ -93,10 +50,10 @@ layers:
   - '8'
   - '9'
   - ''
-  - <
-  - '>'
-  - '['
-  - ']'
+  - ''
+  - ''
+  - ''
+  - ''
   - ''
   - {t: ▽, type: trans}
   - '*'
@@ -105,11 +62,11 @@ layers:
   - {t: '5', h: LSHFT}
   - {t: '6', h: LCTRL}
   - ''
-  - '`'
-  - {t: '''', h: LCTRL}
-  - {t: (, h: LSHFT}
-  - {t: ), h: LALT}
-  - LGUI
+  - ''
+  - LEFT
+  - DOWN
+  - UP
+  - RIGHT
   - {t: ▽, type: trans}
   - ''
   - ''
@@ -117,6 +74,49 @@ layers:
   - '2'
   - {t: '3', type: held}
   - '0'
+  - ''
+  - LCTRL
+  - LSHFT
+  - LALT
+  - LGUI
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  Sym:
+  - _
+  - +
+  - KP MINUS
+  - '*'
+  - KP SLASH
+  - KP EQUAL
+  - <
+  - '>'
+  - '['
+  - ']'
+  - ''
+  - {t: ▽, type: trans}
+  - '|'
+  - {t: '?', h: LGUI}
+  - {t: '!', h: LALT}
+  - {t: ':', h: LSHFT}
+  - {t: ;, h: LCTRL}
+  - KP DOT
+  - '`'
+  - {t: '''', h: LCTRL}
+  - {t: (, h: LSHFT}
+  - {t: ), h: LALT}
+  - LGUI
+  - {t: ▽, type: trans}
+  - '&'
+  - '#'
+  - $
+  - {t: '~', type: held}
+  - '%'
+  - '@'
   - ^
   - '"'
   - '{'
@@ -124,7 +124,7 @@ layers:
   - ''
   - {t: ▽, type: trans}
   - ''
-  - ''
+  - '&sym'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&num'
@@ -178,8 +178,8 @@ combos:
 - p: [15, 20]
   k: '&caps_word'
 - p: [27, 32]
-  k: {t: Nav, h: toggle}
-  l: [' ', Nav]
+  k: {t: Sym, h: toggle}
+  l: [' ', Sym]
 - p: [28, 31]
   k: {t: Num, h: toggle}
   l: [' ', Num]
