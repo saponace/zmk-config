@@ -19,27 +19,6 @@
         * layers
         */
 
-        sym: layer_sym {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <400>;
-            bindings = <&sl SYM>, <&btog SYM>;
-        };
-
-        num: layer_num {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <400>;
-            bindings = <&sl NUM>, <&btog NUM>;
-        };
-
-        sys: layer_sys {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <400>;
-            bindings = <&sl SYS>, <&btog SYS>;
-        };
-
         hm: home_row_mod {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -69,15 +48,6 @@
     combos {
         compatible = "zmk,combos";
 
-        /*
-        * Move to layer SYS
-        */
-
-        lsys {
-            bindings = <&sys>;
-            key-positions = <37 40>;
-        };
-
         caps_word {
             bindings = <&caps_word>;
             key-positions = <15 20>;
@@ -102,29 +72,6 @@
         };
     };
 
-    macros {
-        /*
-        * This macro:
-        * - disables all layers except `ALPHA` (default) - see `&to` documentation
-        * - then subsequently toggles the desired `upper layer` (param 2)
-
-        * Params:
-        * 1. layer to activate
-        */
-
-        btog: btog {
-            wait-ms = <0>;
-            tap-ms = <0>;
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings =
-                <&macro_press>,
-                <&to ALPHA &macro_param_1to1>,
-                <&macro_press>,
-                <&tog MACRO_PLACEHOLDER>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -134,7 +81,7 @@
 &kp ESCAPE  &kp Q       &kp W       &kp E        &kp R        &kp T        &kp Y      &kp U        &kp I          &kp O        &kp P          &bspc_del
 &kp TAB     &hm LGUI A  &hm LALT S  &hm LSHFT D  &hm LCTRL F  &kp G        &kp H      &hm LCTRL J  &hm LSHFT K    &hm LALT L   &hm LGUI SEMI  &kp INSERT
 &none       &kp Z       &lt SYS X   &lt SYM C    &lt NUM V    &kp B        &kp N      &lt NUM M    &lt SYM COMMA  &lt SYS DOT  &slsh_bak      &sk LEFT_SHIFT
-                                    &none        &sym         &kp SPACE    &kp ENTER  &num         &none
+                                    &none        &mo NUM      &kp SPACE    &kp ENTER  &mo SYM     &none
             >;
         };
 
@@ -154,7 +101,7 @@
 &kp UNDER      &kp PLUS           &kp KP_MINUS   &kp ASTERISK     &kp KP_SLASH    &kp KP_EQUAL    &kp LESS_THAN  &kp GREATER_THAN        &kp LEFT_BRACKET            &kp RIGHT_BRACKET           &none     &trans 
 &kp PIPE       &hm LGUI QUESTION  &hm LALT EXCL  &hm LSHFT COLON  &hm LCTRL SEMI  &kp KP_DOT      &kp GRAVE      &hm LCTRL SINGLE_QUOTE  &hm LSHFT LEFT_PARENTHESIS  &hm LALT RIGHT_PARENTHESIS  &kp LGUI  &trans 
 &kp AMPERSAND  &kp POUND          &kp DOLLAR     &kp TILDE        &kp PERCENT     &kp AT          &kp CARET      &kp DOUBLE_QUOTES       &kp LEFT_BRACE              &kp RIGHT_BRACE             &none     &trans 
-                                                 &none            &sym            &trans          &trans         &num                    &none
+                                                 &none            &none          &trans          &trans         &none                    &none
             >;
         };
 
