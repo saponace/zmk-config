@@ -8,10 +8,10 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
-#define ALPHA    0
-#define NAV      1
-#define NUM  2
-#define SYS   3
+#define ALPHA 0
+#define NUM  1
+#define SYM  2
+#define SYS  3
 
 / {
     behaviors {
@@ -19,11 +19,11 @@
         * layers
         */
 
-        nav: layer_nav {
+        sym: layer_sym {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <400>;
-            bindings = <&sl NAV>, <&btog NAV>;
+            bindings = <&sl SYM>, <&btog SYM>;
         };
 
         num: layer_num {
@@ -83,10 +83,10 @@
             key-positions = <15 20>;
         };
 
-        toggle_nav {
-            bindings = <&tog NAV>;
+        toggle_sym {
+            bindings = <&tog SYM>;
             key-positions = <27 32>;
-            layers = <ALPHA NAV>;
+            layers = <ALPHA SYM>;
         };
 
         toggle_num {
@@ -133,28 +133,28 @@
             bindings = <
 &kp ESCAPE  &kp Q       &kp W       &kp E        &kp R        &kp T        &kp Y      &kp U        &kp I          &kp O        &kp P          &bspc_del
 &kp TAB     &hm LGUI A  &hm LALT S  &hm LSHFT D  &hm LCTRL F  &kp G        &kp H      &hm LCTRL J  &hm LSHFT K    &hm LALT L   &hm LGUI SEMI  &kp INSERT
-&none       &kp Z       &lt SYS X   &lt NAV C    &lt NUM V    &kp B        &kp N      &lt NUM M    &lt NAV COMMA  &lt SYS DOT  &slsh_bak      &sk LEFT_SHIFT
-                                    &none        &nav         &kp SPACE    &kp ENTER  &num         &none
-            >;
-        };
-
-        NAV {
-            display-name = "Nav";
-            bindings = <
-&kp UNDER      &kp PLUS           &kp KP_MINUS   &kp ASTERISK     &kp KP_SLASH    &kp KP_EQUAL    &none   &none      &none      &none     &none      &trans
-&kp PIPE       &hm LGUI QUESTION  &hm LALT EXCL  &hm LSHFT COLON  &hm LCTRL SEMI  &kp KP_DOT      &none   &kp LEFT   &kp DOWN   &kp UP    &kp RIGHT  &trans
-&kp AMPERSAND  &kp POUND          &kp DOLLAR     &kp TILDE        &kp PERCENT     &kp AT          &none   &kp LCTRL  &kp LSHFT  &kp LALT  &kp LGUI   &trans
-                                                 &none            &nav            &trans          &trans  &none      &none
+&none       &kp Z       &lt SYS X   &lt SYM C    &lt NUM V    &kp B        &kp N      &lt NUM M    &lt SYM COMMA  &lt SYS DOT  &slsh_bak      &sk LEFT_SHIFT
+                                    &none        &sym         &kp SPACE    &kp ENTER  &num         &none
             >;
         };
 
         NUM {
             display-name = "Num";
             bindings = <
-&kp PLUS   &kp MINUS       &kp N7       &kp N8        &kp N9        &none     &kp LESS_THAN  &kp GREATER_THAN        &kp LEFT_BRACKET            &kp RIGHT_BRACKET           &none     &trans
-&kp ASTRK  &hm LGUI SLASH  &hm LALT N4  &hm LSHFT N5  &hm LCTRL N6  &none     &kp GRAVE      &hm LCTRL SINGLE_QUOTE  &hm LSHFT LEFT_PARENTHESIS  &hm LALT RIGHT_PARENTHESIS  &kp LGUI  &trans
-&none      &none           &kp N1       &kp N2        &kp N3        &kp N0    &kp CARET      &kp DOUBLE_QUOTES       &kp LEFT_BRACE              &kp RIGHT_BRACE             &none     &trans
-                                        &none         &none         &trans    &trans         &num                    &none
+&kp PLUS   &kp MINUS       &kp N7       &kp N8        &kp N9        &none     &none   &none      &none      &none     &none      &trans 
+&kp ASTRK  &hm LGUI SLASH  &hm LALT N4  &hm LSHFT N5  &hm LCTRL N6  &none     &none   &kp LEFT   &kp DOWN   &kp UP    &kp RIGHT  &trans 
+&none      &none           &kp N1       &kp N2        &kp N3        &kp N0    &none   &kp LCTRL  &kp LSHFT  &kp LALT  &kp LGUI   &trans 
+                                        &none         &none         &trans    &trans  &none      &none
+            >;
+        };
+
+        SYM {
+            display-name = "Sym";
+            bindings = <
+&kp UNDER      &kp PLUS           &kp KP_MINUS   &kp ASTERISK     &kp KP_SLASH    &kp KP_EQUAL    &kp LESS_THAN  &kp GREATER_THAN        &kp LEFT_BRACKET            &kp RIGHT_BRACKET           &none     &trans 
+&kp PIPE       &hm LGUI QUESTION  &hm LALT EXCL  &hm LSHFT COLON  &hm LCTRL SEMI  &kp KP_DOT      &kp GRAVE      &hm LCTRL SINGLE_QUOTE  &hm LSHFT LEFT_PARENTHESIS  &hm LALT RIGHT_PARENTHESIS  &kp LGUI  &trans 
+&kp AMPERSAND  &kp POUND          &kp DOLLAR     &kp TILDE        &kp PERCENT     &kp AT          &kp CARET      &kp DOUBLE_QUOTES       &kp LEFT_BRACE              &kp RIGHT_BRACE             &none     &trans 
+                                                 &none            &sym            &trans          &trans         &num                    &none
             >;
         };
 
