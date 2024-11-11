@@ -38,10 +38,10 @@ layers:
   - {t: /, s: \}
   - {t: LEFT SHIFT, h: sticky}
   - ''
-  - '&sym'
+  - Num
   - SPACE
   - ENTER
-  - '&num'
+  - Sym
   - ''
   Num:
   - +
@@ -124,10 +124,10 @@ layers:
   - ''
   - {t: ▽, type: trans}
   - ''
-  - '&sym'
+  - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&num'
+  - ''
   - ''
   Sys:
   - ''
@@ -173,8 +173,6 @@ layers:
   - ''
   - ''
 combos:
-- p: [37, 40]
-  k: '&sys'
 - p: [15, 20]
   k: '&caps_word'
 - p: [27, 32]
