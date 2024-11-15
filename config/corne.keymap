@@ -98,10 +98,10 @@
         SYM {
             display-name = "Sym";
             bindings = <
-&kp UNDER      &kp PLUS           &kp KP_MINUS   &kp ASTERISK     &kp KP_SLASH    &kp KP_EQUAL    &kp LESS_THAN  &kp GREATER_THAN        &kp LEFT_BRACKET            &kp RIGHT_BRACKET           &none     &trans
-&kp PIPE       &hm LGUI QUESTION  &hm LALT EXCL  &hm LSHFT COLON  &hm LCTRL SEMI  &kp KP_DOT      &kp GRAVE      &hm LCTRL SINGLE_QUOTE  &hm LSHFT LEFT_PARENTHESIS  &hm LALT RIGHT_PARENTHESIS  &kp LGUI  &trans
-&kp AMPERSAND  &kp POUND          &kp DOLLAR     &kp TILDE        &kp PERCENT     &kp AT          &kp CARET      &kp DOUBLE_QUOTES       &kp LEFT_BRACE              &kp RIGHT_BRACE             &none     &trans
-                                                 &none            &none           &trans          &trans         &none                   &none
+&kp PLUS       &kp MINUS          &kp ASTERISK   &kp SLASH        &kp EQUAL       &kp UNDER     &kp LESS_THAN  &kp GREATER_THAN        &kp LEFT_BRACKET            &kp RIGHT_BRACKET           &none     &trans
+&kp PIPE       &hm LGUI QUESTION  &hm LALT EXCL  &hm LSHFT COLON  &hm LCTRL SEMI  &kp KP_DOT    &kp GRAVE      &hm LCTRL SINGLE_QUOTE  &hm LSHFT LEFT_PARENTHESIS  &hm LALT RIGHT_PARENTHESIS  &kp LGUI  &trans
+&kp AMPERSAND  &kp POUND          &kp DOLLAR     &kp TILDE        &kp PERCENT     &kp AT        &kp CARET      &kp DOUBLE_QUOTES       &kp LEFT_BRACE              &kp RIGHT_BRACE             &none     &trans
+                                                 &none            &none           &trans        &trans         &none                   &none
             >;
         };
 
