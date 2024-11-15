@@ -87,12 +87,12 @@ layers:
   - ''
   - ''
   Sym:
-  - _
   - +
-  - KP MINUS
+  - '-'
   - '*'
-  - KP SLASH
-  - KP EQUAL
+  - /
+  - '='
+  - _
   - <
   - '>'
   - '['
