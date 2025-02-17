@@ -113,8 +113,8 @@ layers:
   - {t: ▽, type: trans}
   - '&'
   - '#'
-  - $
-  - {t: '~', type: held}
+  - '~'
+  - {t: $, type: held}
   - '%'
   - '@'
   - ^
