@@ -199,9 +199,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: Sys, h: toggle}
+  - {t: Sym, h: toggle}
+  - {t: Num, h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: Num, h: toggle}
