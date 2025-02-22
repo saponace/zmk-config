@@ -131,10 +131,10 @@
         layer_lcr {
             display-name = "LCR";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans    &trans    &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans    &trans    &trans  &trans
-&trans  &trans  &tog 3  &tog 2  &tog 1  &trans    &trans  &tog NUM  &tog SYM  &tog SYS  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans    &trans
+&trans  &trans  &trans    &trans    &trans    &trans    &trans  &trans    &trans    &trans    &trans  &trans
+&trans  &trans  &trans    &trans    &trans    &trans    &trans  &trans    &trans    &trans    &trans  &trans
+&trans  &trans  &tog SYS  &tog SYM  &tog NUM  &trans    &trans  &tog NUM  &tog SYM  &tog SYS  &trans  &trans
+                          &trans    &trans    &trans    &trans  &trans    &trans
             >;
         };
     };
