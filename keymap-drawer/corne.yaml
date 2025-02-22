@@ -155,10 +155,10 @@ layers:
   - F11
   - F12
   - ''
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1', type: held}
+  - ''
+  - {t: BT, h: '0', type: held}
+  - {t: BT, h: '1'}
   - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
   - BT CLR
   - ''
   - ''
