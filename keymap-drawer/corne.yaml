@@ -100,10 +100,10 @@ layers:
   - ''
   - {t: ▽, type: trans}
   - '|'
-  - {t: '?', h: LGUI}
-  - {t: '!', h: LALT}
-  - {t: ':', h: LSHFT}
-  - {t: ;, h: LCTRL}
+  - {t: ;, h: LGUI}
+  - {t: ':', h: LALT}
+  - {t: '!', h: LSHFT}
+  - {t: '?', h: LCTRL}
   - KP DOT
   - '`'
   - {t: '''', h: LCTRL}
