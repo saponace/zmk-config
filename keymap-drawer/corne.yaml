@@ -44,8 +44,8 @@ layers:
   - Sym
   - ''
   Num:
-  - +
-  - '-'
+  - ''
+  - ''
   - '7'
   - '8'
   - '9'
@@ -56,8 +56,8 @@ layers:
   - '&mmv MOVE_UP'
   - '&mmv MOVE_RIGHT'
   - {t: ▽, type: trans}
-  - '*'
-  - {t: /, h: LGUI}
+  - ''
+  - LGUI
   - {t: '4', h: LALT}
   - {t: '5', h: LSHFT}
   - {t: '6', h: LCTRL}
@@ -87,10 +87,10 @@ layers:
   - ''
   - ''
   Sym:
-  - ''
-  - ''
-  - ''
-  - ''
+  - +
+  - '*'
+  - KP MINUS
+  - KP DIVIDE
   - '='
   - _
   - <
