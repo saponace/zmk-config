@@ -88,8 +88,8 @@ layers:
   - ''
   Sym:
   - +
-  - '*'
   - KP MINUS
+  - '*'
   - KP DIVIDE
   - '='
   - _
