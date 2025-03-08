@@ -15,6 +15,17 @@
 #define SYS  3
 #define LCR  4
 
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 450
+
+
+&mmv {
+    time-to-max-speed-ms = <150>;
+};
+&msc {
+    time-to-max-speed-ms = <0>;
+};
+
+
 / {
     behaviors {
         /*
