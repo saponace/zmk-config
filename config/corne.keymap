@@ -14,17 +14,11 @@
 #define SYM  2
 #define SYS  3
 #define LCR  4
-
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 450
 
+&mmv { time-to-max-speed-ms = <150>; };
 
-&mmv {
-    time-to-max-speed-ms = <150>;
-};
-&msc {
-    time-to-max-speed-ms = <0>;
-};
-
+&msc { time-to-max-speed-ms = <0>; };
 
 / {
     behaviors {
@@ -120,10 +114,10 @@
         layer_sym {
             display-name = "Sym";
             bindings = <
-&kp PLUS       &kp KP_MINUS        &kp ASTERISK    &kp KP_DIVIDE   &kp EQUAL           &kp UNDER     &kp LESS_THAN  &kp GREATER_THAN        &kp LEFT_BRACKET            &kp RIGHT_BRACKET           &none     &trans
-&kp PIPE       &hm LGUI SEMICOLON  &hm LALT COLON  &hm LSHFT EXCL  &hm LCTRL QUESTION  &kp KP_DOT    &kp GRAVE      &hm LCTRL SINGLE_QUOTE  &hm LSHFT LEFT_PARENTHESIS  &hm LALT RIGHT_PARENTHESIS  &kp LGUI  &trans
-&kp AMPERSAND  &kp POUND           &kp TILDE       &kp DOLLAR      &kp PERCENT         &kp AT        &kp CARET      &kp DOUBLE_QUOTES       &kp LEFT_BRACE              &kp RIGHT_BRACE             &none     &trans
-                                                   &none           &none               &trans        &trans         &none                   &none
+&kp PLUS       &kp STAR            &kp KP_SLASH    &kp KP_MINUS    &kp UNDERSCORE      &kp KP_EQUAL    &kp LESS_THAN  &kp GREATER_THAN        &kp LEFT_BRACKET            &kp RIGHT_BRACKET           &none     &trans
+&kp PIPE       &hm LGUI SEMICOLON  &hm LALT COLON  &hm LSHFT EXCL  &hm LCTRL QUESTION  &kp KP_DOT      &kp GRAVE      &hm LCTRL SINGLE_QUOTE  &hm LSHFT LEFT_PARENTHESIS  &hm LALT RIGHT_PARENTHESIS  &kp LGUI  &trans
+&kp AMPERSAND  &kp POUND           &kp TILDE       &kp DOLLAR      &kp PERCENT         &kp AT          &kp CARET      &kp DOUBLE_QUOTES       &kp LEFT_BRACE              &kp RIGHT_BRACE             &none     &trans
+                                                   &none           &none               &trans          &trans         &none                   &none
             >;
         };
 
