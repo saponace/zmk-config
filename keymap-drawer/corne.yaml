@@ -88,11 +88,11 @@ layers:
   - ''
   Sym:
   - +
-  - KP MINUS
   - '*'
-  - KP DIVIDE
-  - '='
+  - KP SLASH
+  - KP MINUS
   - _
+  - KP EQUAL
   - <
   - '>'
   - '['
