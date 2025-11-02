@@ -87,9 +87,9 @@ layers:
   - ''
   - ''
   Sym:
+  - KP SLASH
   - +
   - '*'
-  - KP SLASH
   - KP MINUS
   - _
   - KP EQUAL
