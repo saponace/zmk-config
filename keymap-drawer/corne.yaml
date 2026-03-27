@@ -147,7 +147,7 @@ layers:
   - LALT
   - {t: BRIGHTNESS DEC, h: LSHFT}
   - {t: BRIGHTNESS INC, h: LCTRL}
-  - ''
+  - KP NUMLOCK
   - F7
   - F8
   - F9
