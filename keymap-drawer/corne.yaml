@@ -27,23 +27,23 @@ layers:
   - INSERT
   - ''
   - Z
-  - {t: X, h: Sys}
-  - {t: C, h: Sym}
-  - {t: V, h: Num}
+  - {t: X, h: SYS}
+  - {t: C, h: SYM}
+  - {t: V, h: NUM}
   - B
   - N
-  - {t: M, h: Num}
-  - {t: ',', h: Sym}
-  - {t: ., h: Sys}
+  - {t: M, h: NUM}
+  - {t: ',', h: SYM}
+  - {t: ., h: SYS}
   - {t: /, s: \}
   - {t: ' ', h: LCR}
   - ''
-  - Num
+  - NUM
   - SPACE
   - ENTER
-  - Sym
+  - SYM
   - ''
-  Num:
+  NUM:
   - ''
   - ''
   - '7'
@@ -86,7 +86,7 @@ layers:
   - {t: ▽, type: trans}
   - ''
   - ''
-  Sym:
+  SYM:
   - KP SLASH
   - +
   - '*'
@@ -129,7 +129,7 @@ layers:
   - {t: ▽, type: trans}
   - ''
   - ''
-  Sys:
+  SYS:
   - ''
   - ''
   - MUTE
@@ -199,14 +199,14 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: Sys, h: toggle}
-  - {t: Sym, h: toggle}
-  - {t: Num, h: toggle}
+  - {t: SYS, h: toggle}
+  - {t: SYM, h: toggle}
+  - {t: NUM, h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: Num, h: toggle}
-  - {t: Sym, h: toggle}
-  - {t: Sys, h: toggle}
+  - {t: NUM, h: toggle}
+  - {t: SYM, h: toggle}
+  - {t: SYS, h: toggle}
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
@@ -219,11 +219,11 @@ combos:
 - p: [15, 20]
   k: '&caps_word'
 - p: [28, 31]
-  k: {t: Num, h: toggle}
-  l: [' ', Num]
+  k: {t: NUM, h: toggle}
+  l: [' ', NUM]
 - p: [27, 32]
-  k: {t: Sym, h: toggle}
-  l: [' ', Sym]
+  k: {t: SYM, h: toggle}
+  l: [' ', SYM]
 - p: [26, 33]
-  k: {t: Sys, h: toggle}
-  l: [' ', Sys]
+  k: {t: SYS, h: toggle}
+  l: [' ', SYS]
