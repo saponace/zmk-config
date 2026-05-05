@@ -102,7 +102,7 @@
         };
 
         layer_num {
-            display-name = "Num";
+            display-name = "NUM";
             bindings = <
 &none       &none         &kp N7       &kp N8        &kp N9        &mkp LCLK          &msc SCRL_UP     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans
 &none       &kp LGUI      &hm LALT N4  &hm LSHFT N5  &hm LCTRL N6  &mkp RCLK          &msc SCRL_DOWN   &kp LEFT        &kp DOWN        &kp UP        &kp RIGHT        &trans
@@ -112,7 +112,7 @@
         };
 
         layer_sym {
-            display-name = "Sym";
+            display-name = "SYM";
             bindings = <
 &kp KP_SLASH   &kp PLUS            &kp STAR        &kp KP_MINUS    &kp UNDERSCORE      &kp KP_EQUAL    &kp LESS_THAN  &kp GREATER_THAN        &kp LEFT_BRACKET            &kp RIGHT_BRACKET           &none     &trans
 &kp PIPE       &hm LGUI SEMICOLON  &hm LALT COLON  &hm LSHFT EXCL  &hm LCTRL QUESTION  &kp KP_DOT      &kp GRAVE      &hm LCTRL SINGLE_QUOTE  &hm LSHFT LEFT_PARENTHESIS  &hm LALT RIGHT_PARENTHESIS  &kp LGUI  &trans
@@ -122,7 +122,7 @@
         };
 
         layer_sys {
-            display-name = "Sys";
+            display-name = "SYS";
             bindings = <
 &none  &none     &kp K_MUTE    &kp C_VOLUME_DOWN           &kp C_VOLUME_UP             &kp CAPSLOCK      &kp F1  &kp F2  &kp F3  &kp F4   &kp F5   &kp F6
 &none  &kp LGUI  &kp LALT      &hm LSHFT C_BRIGHTNESS_DEC  &hm LCTRL C_BRIGHTNESS_INC  &kp KP_NUMLOCK    &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
